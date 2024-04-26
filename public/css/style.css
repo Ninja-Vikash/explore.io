@@ -37,6 +37,24 @@
   .search-area {
     display: flex;
     gap: 20px;
+    transition: ease 0.3s;
+  }
+  
+  @media screen and (max-width: 1120px) {
+    .search-area {
+      width: 400px;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .search-area {
+      width: 85vw;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .search-area {
+      gap: 0;
+    }
   }
   
   .input {
@@ -53,7 +71,23 @@
     border-bottom: var(--border-height) solid var(--border-before-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
+  @media screen and (max-width: 1120px) {
+    .input {
+      width: 120%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .input {
+      width: 68vw;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .input {
+      width: 60vw;
+    }
+  }
+
   .input-border {
     position: absolute;
     background: var(--border-after-color);
@@ -132,13 +166,32 @@
     width: 50vw;
     padding-top: 10px;
     padding-inline: 20px;
+    transition: ease 0.3s;
   }
 
+  @media screen and (max-width: 1120px) {
+    .result-area {
+      min-width: 500px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .result-area {
+      min-width: 90vw;
+    }
+  }
+  
   .result {
     padding-bottom: 15px;
     margin-bottom: 10px;
     border-bottom: 1px solid #555;
   }
+
+  @media screen and (max-width: 600px) {
+    .result {
+      overflow: hidden;
+    }
+  }
+
   .result h2 {
     font-weight: 400;
     font-size: 22px;

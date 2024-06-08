@@ -205,3 +205,14 @@
   .result p {
     color: #ddd;
   }
+
+  .footer-area {
+    height: 12vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .footer-area p {
+    color: white;
+    font-size: 0.8rem;
+  }

@@ -17,6 +17,7 @@
     <div id="main">
       <h1>explore<span>.io</span></h1>
 
+      <!-- Search Box Area -->
       <form action="/search" method="post">
         <div class="search-area">
           <div class="form-control">
@@ -37,14 +38,23 @@
         </div>
       </form>
 
+      <!-- Result Area -->
       <div class="result-area">
         <% results.forEach(function(data){ %>
             <div class="result">
               <h2><%= data.title %></h2>
-              <a href="<%= data.url %>"><%= data.url %></a>
+              <a href="<%= data.url %>" target="_blank"><%= data.url %></a>
               <p><%= data.description %></p>
             </div>
         <% }) %>
+      </div>
+
+      <div>
+        <% if(results.length != 0){ %>
+          <div class="footer-area">
+            <p>&copy; copyright reserved | Vikash Kumar</p>
+          </div>
+        <% } %>
       </div>
     </div>
   </body>

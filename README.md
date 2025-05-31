@@ -4,8 +4,11 @@
 
 A minimal search engine built on the top of **google search API**<br />
 
-> [!warning]\
-> Currently runs on only backend.
+### Tech Stack to build?
+React, Express, NodeJS
+
+> [!notice]\
+> Now! built backend and frontend separately!
 
 ### Overview
 Explore.io is a powerful search engine designed to provide users with efficient and relevant search results. With its sleek design and intuitive interface, explore.io aims to enhance the search experience and help users find information quickly and easily.

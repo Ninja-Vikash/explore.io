@@ -4,7 +4,7 @@
 
 A minimal search engine built on the top of **google search API**<br />
 
-> [!INFO]\
+> [!warning]\
 > Currently runs on only backend.
 
 ### Overview
